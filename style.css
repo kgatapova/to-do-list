@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 20%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#add-task {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    grid-gap: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    position: relative;
+    height: 50px;
+}
+
+.task {
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.delete-btn {
+    width: 18px;
+    height: 18px;
+    border: none;
+    background-image: url("media/delete.svg");
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.done .task {
+    text-decoration: line-through;
+}
